@@ -25,9 +25,9 @@ CustomToken is a simple Ethereum-based token contract written in Solidity. This 
 
 #### createTokens
 
-'''
+```
 function createTokens(address recipient, uint256 amount) public
-'''
+```
 
 **Description**: Mints new tokens and assigns them to the specified address.
 
@@ -41,9 +41,9 @@ function createTokens(address recipient, uint256 amount) public
 
 #### destroyTokens
 
-'''
+```
 function destroyTokens(address holder, uint256 amount) public
-'''
+```
 
 **Description**: Burns tokens from the specified address, reducing the total supply.
 
@@ -66,7 +66,7 @@ function destroyTokens(address holder, uint256 amount) public
 
 ### Example
 
-'''
+```
 // Deploy the contract
 CustomToken customToken = new CustomToken();
 
@@ -81,7 +81,7 @@ customToken.destroyTokens(0x123..., 500);
 
 // Check the balance of address 0x123...
 balance = customToken.accountBalances(0x123...); // Should be 500
-'''
+```
 
 ## License
 
